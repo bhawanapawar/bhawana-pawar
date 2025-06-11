@@ -1,14 +1,1 @@
-name: Quote Generator
 
-on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-
-jobs:
-  update-readme:
-    name: Update Quote Section
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: marketplacer/auto-quote-readme@v1
